@@ -1,0 +1,19 @@
+{
+  "name": "rmb-worker",
+  "version": "0.1.0",
+  "description": "Dumb RMB worker intended to be fronted by an RMB Proxy",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mike Cotterman <mike@mehstronauts.dev>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0"
+  }
+}
