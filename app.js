@@ -13,6 +13,11 @@ const showError = (err, req, res, next) => {
 if(process.env.NODE_ENV === 'development') {
     const morgan = require('morgan');
     app.use(morgan('dev'));
+} else {
+    const compression = require('compression');
+    app.use(compression());
+    const helmet = require('helmet');
+    app.use(helmet());
 }
 
 //Lame temporary authentication method
