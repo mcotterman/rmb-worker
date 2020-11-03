@@ -1,0 +1,15 @@
+@host = http://192.168.105.137:3001
+@key = JBHPRH98hioHIHFWIuh9
+
+GET {{host}}/rmb HTTP/1.1
+Authorization: {{key}}
+Content-Type: application/json
+
+###
+POST {{host}}/rmb HTTP/1.1
+Authorization: {{key}}
+Content-Type: application/json
+
+{
+    "data": "0l00"
+}
